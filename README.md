@@ -38,5 +38,4 @@ A few rows were deliberately shaped to exercise the trickier queries:
 - MySQL has no native `FULL OUTER JOIN`; Query 4 emulates it with a `UNION` of a `LEFT JOIN` and a `RIGHT JOIN`. On PostgreSQL, SQL Server, or Oracle, `FULL OUTER JOIN` can be written directly instead.
 - Query 8's day counts (`DATEDIFF` to `CURDATE()`) will differ depending on the day the query is actually run — the comment block notes what the output looks like if run on **2026-09-09**.
 - Query 16 labels each order with a discount tier (`'10% off'`, `'5% off'`, `'No discount'`) rather than computing a discounted dollar amount; either interpretation is reasonable for "assign a discount."
-- Query 17 uses High > 70000, Medium 45000–70000, Low < 45000 as the salary bands — adjust these thresholds if your instructor specified different cutoffs.
--
+- Query 17 uses High > 70000, Medium 45000–70000, Low < 45000 as the salary bands.
